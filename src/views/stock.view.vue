@@ -1,5 +1,5 @@
 <script setup lang="ts">
-  import {useRoute} from "vue-router";
+  import { useRoute } from "vue-router";
   import { TStock } from "../types/stock.type";
   import { store } from '../store/store';
   import FullCard from '../components/FullCard.vue';

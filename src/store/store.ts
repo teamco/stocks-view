@@ -4,6 +4,7 @@ import { stocksPromise } from '../api/stocks.api';
 import { reactive } from 'vue';
 
 const stocks: TStock[] = [];
+const loadingTimeout: number = 2000;
 
 let USDollar = new Intl.NumberFormat('en-US', {
   style: 'currency',
@@ -12,6 +13,7 @@ let USDollar = new Intl.NumberFormat('en-US', {
 
 export const store = reactive({
   stocks,
+  loadingTimeout,
   loading: false,
   error: null,
   chart: {} as TChart,
@@ -40,7 +42,7 @@ export const store = reactive({
         }).finally(() => {
           this.loading = false;              
         });      
-      }, 2000);
+      }, this.loadingTimeout);
     })
   },
   
