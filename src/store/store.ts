@@ -1,6 +1,6 @@
 import { TStock } from '../types/stock.type';
 import { TChart } from '../types/chart.type';
-import { stocksPrmoise } from '../api/stocks.api';
+import { stocksPromise } from '../api/stocks.api';
 import { reactive } from 'vue';
 
 const stocks: TStock[] = [];
@@ -27,7 +27,7 @@ export const store = reactive({
 
     new Promise((resolve) => {
       setTimeout(() => {         
-        stocksPrmoise.then(stocks => {
+        stocksPromise.then(stocks => {
           this.stocks = stocks.map((stock) => ({
             ...stock,
             formattedPrice: USDollar.format(Number(stock.currentPrice)),

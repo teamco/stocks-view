@@ -10,7 +10,7 @@
     "test": "npm test --passWithNoTests",
     "test:watch": "npm test -- --watch --passWithNoTests",
     "test:coverage": "npm test --passWithNoTests -- --coverage",
-    "cspell": "cspell ./src/**/*.js"
+    "cspell": "cspell ./src/**/*.ts"
   },
   "dependencies": {
     "vue": "^3.5.12",
