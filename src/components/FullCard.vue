@@ -25,8 +25,8 @@ const chartData: TChart = store.chart;
 </script>
 
 <template>
-  <button class="back" @click="$router.push(`/home`)">Back to Home</button>
-  <div class="card" @click="$router.push(`/stocks/${stock.symbol}`)">
+  <button class="back" @click="$router.push(`/stocks-view/home`)">Back to Home</button>
+  <div class="card">
     <header>
       {{ stock.symbol }}
       <div :class="{ active: stock.marketStatus === 'open' }">{{ stock.marketStatus }}</div>

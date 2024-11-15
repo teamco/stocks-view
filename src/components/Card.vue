@@ -5,8 +5,17 @@ import { TStock } from '../types/stock.type';
 
 defineProps<{ stock: TStock }>()
 
+/**
+ * Navigate to the stock's detail view.
+ *
+ * @param {Router} router
+ * The router instance.
+ *
+ * @param {TStock} stock
+ * The stock to navigate to.
+ */
 function navigateTo(router: Router, stock: TStock) {
-  router.push(`/stocks/${stock.symbol}`);
+  router.push(`/stocks-view/stocks/${stock.symbol}`);
 }
 
 </script>
