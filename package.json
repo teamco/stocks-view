@@ -1,5 +1,6 @@
 {
-  "name": "hw-vue",
+  "homepage": "https://teamco.github.io/stocks-view",
+  "name": "stocks-view",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,9 +8,7 @@
     "dev": "vite --port 3001",
     "build": "vue-tsc -b && vite build",
     "preview": "vite preview",
-    "test": "npm test --passWithNoTests",
-    "test:watch": "npm test -- --watch --passWithNoTests",
-    "test:coverage": "npm test --passWithNoTests -- --coverage",
+    "test": "vue-cli-service test:unit",
     "cspell": "cspell ./src/**/*.ts"
   },
   "dependencies": {
@@ -19,11 +18,17 @@
   },
   "devDependencies": {
     "@types/node": "^22.9.0",
-    "@types/testing-library__jest-dom": "^5.14.9",
     "@vitejs/plugin-vue": "^5.1.4",
+    "@vue/cli-service": "^5.0.8",
+    "@vue/test-utils": "^2.4.6",
+    "babel-jest": "^27.5.1",
     "cspell": "^8.16.0",
+    "jsdom": "^25.0.1",
+    "ts-node": "^10.9.2",
     "typescript": "~5.6.2",
     "vite": "^5.4.10",
-    "vue-tsc": "^2.1.8"
-  }
+    "vue-tsc": "^2.1.8",
+    "vue3-jest": "^27.0.0-alpha.1"
+  },
+  "packageManager": "pnpm@9.13.2+sha512.88c9c3864450350e65a33587ab801acf946d7c814ed1134da4a924f6df5a2120fd36b46aab68f7cd1d413149112d53c7db3a4136624cfd00ff1846a0c6cef48a"
 }
