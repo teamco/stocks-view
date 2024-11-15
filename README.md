@@ -1,6 +1,7 @@
 [![CICD.Build](https://github.com/teamco/stocks-view/actions/workflows/build.yml/badge.svg)](https://github.com/teamco/stocks-view/actions/workflows/build.yml)
 [![CSpell CI](https://github.com/teamco/stocks-view/actions/workflows/cspell.yml/badge.svg)](https://github.com/teamco/stocks-view/actions/workflows/cspell.yml)
 [![Unit Tests](https://github.com/teamco/stocks-view/actions/workflows/unit.yml/badge.svg)](https://github.com/teamco/stocks-view/actions/workflows/unit.yml)
+[![Deploy static content to Pages](https://github.com/teamco/stocks-view/actions/workflows/static.yml/badge.svg)](https://github.com/teamco/stocks-view/actions/workflows/static.yml)
 
 # Stocks View
 
