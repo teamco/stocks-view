@@ -1,3 +1,5 @@
+[![CICD.Build](https://github.com/teamco/stocks-view/actions/workflows/build.yml/badge.svg)](https://github.com/teamco/stocks-view/actions/workflows/build.yml)
+
 # Stocks View
 
 A Vue.js application for viewing and searching stocks.
