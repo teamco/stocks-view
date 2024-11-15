@@ -1,4 +1,5 @@
 // StockView.spec.ts
+import '@testing-library/jest-dom';
 import { render } from '@testing-library/vue';
 import { vi } from 'vitest'
 
@@ -6,6 +7,8 @@ import StockView from '../stock.view.vue';
 import { store } from '../../store/store';
 import { TStock } from '../../types/stock.type';
 import { useRoute } from 'vue-router';
+
+const _useRoute: any = useRoute;
 
 vi.mock('vue-router', () => ({
    useRoute: vi.fn()
@@ -41,7 +44,7 @@ describe('StockView', () => {
 
     store.stocks = [stock];
 
-    useRoute.mockImplementation(() => ({ params: { id: stock.symbol }}));
+    _useRoute.mockImplementation(() => ({ params: { id: stock.symbol }}));
 
     const { getByText } = render(StockView);
 
@@ -75,7 +78,7 @@ describe('StockView', () => {
 
     store.stocks = [stock];
 
-    useRoute.mockImplementation(() => ({ params: { id: stock.symbol }}));
+    _useRoute.mockImplementation(() => ({ params: { id: stock.symbol }}));
 
     const { getByText } = render(StockView);
 

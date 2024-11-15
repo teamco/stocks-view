@@ -1,3 +1,4 @@
+import '@testing-library/jest-dom';
 import { render, fireEvent, waitFor } from '@testing-library/vue';
 import { vi } from 'vitest'
 
