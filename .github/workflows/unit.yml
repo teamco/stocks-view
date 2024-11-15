@@ -24,13 +24,7 @@ jobs:
       - name: Unit tests
         run: |
           npm test
-
-      - name: "Tests Report"
-        uses: dorny/test-reporter@v1
-        with:
-          name: Tests Report
-          path: '__report__/jest-component.xml'
-          reporter: jest-junit
+          
 
     # - name: Build the Docker image
     #   run: docker build . --file Dockerfile --tag hflow_img:$(date +%s)
