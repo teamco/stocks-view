@@ -5,6 +5,7 @@ import path from 'path';
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [vue()],
+  base: '/stocks-view/',
   test: {
     // enable jest-like global test APIs
     globals: true,
