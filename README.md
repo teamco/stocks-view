@@ -5,6 +5,13 @@
 
 A Vue.js application for viewing and searching stocks.
 
+### Stocks list
+<img width="600" alt="Screenshot 2024-11-15 at 12 00 44" src="https://github.com/user-attachments/assets/8e3cecec-d096-489c-b131-05691383eac7">
+
+### Stock detailed information
+<img width="600" alt="Screenshot 2024-11-15 at 12 00 54" src="https://github.com/user-attachments/assets/ac2681e9-5d30-4012-b222-9e01303c1d6a">
+
+
 ## Table of Contents
 
 - [Stocks View](#stocks-view)
