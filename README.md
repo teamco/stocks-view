@@ -6,6 +6,8 @@
 
 A Vue.js application for viewing and searching stocks.
 
+Live: [https://teamco.github.io/stocks-view](https://teamco.github.io/stocks-view)
+
 ### Stocks list
 <img width="600" alt="Screenshot 2024-11-15 at 12 00 44" src="https://github.com/user-attachments/assets/8e3cecec-d096-489c-b131-05691383eac7">
 
