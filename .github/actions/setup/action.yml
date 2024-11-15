@@ -16,10 +16,15 @@ runs:
         node-version: ${{ inputs.node-version }}
         cache: 'npm'
 
+    - name: Show working directory
+      shell: bash
+      run: |    
+        pwd
+        ls -lsa
+
     - name: Install Project dependencies
       shell: bash
-      run: |
-        corepack enable
+      run: |    
         npm install
 
     - name: Check installed versions
